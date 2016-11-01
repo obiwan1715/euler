@@ -7,7 +7,7 @@ for (i; i<limit; i++)
 	if (i%3 === 0 || i%5 === 0) {
 		total = total + i;
 	}
-	
-console.log(total);
-	
-};
+
+document.getElementById('result').innerHTML = total;
+
+}

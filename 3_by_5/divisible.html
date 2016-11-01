@@ -1,18 +1,33 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-<title>Euler Project Problem 1</title>
-<link href='divisible.css' rel='stylesheet'>
+	<title>Euler Project Problem 1</title>
+	<script src='divisible_by_3_or_5.js'></script>
+	<<link href='divisible.css' rel='stylesheet'>
 </head>
 
 <body>
-<h1>Project Euler Problem 1</h1>
-<p>This function will give the sum of all natural numbers divisible by 3 or 5 below a certain limit.</p>
-<h1>Enter limit</h1>
-<form>
-<input  name="limit" id="limit" type="numeral">
-<input type="submit" value ="Submit">
-</form>
-<h2>Result</h2>
+
+	<center>
+		<h1>Project Euler Problem 1</h1>
+		<p>This function will give the sum of all natural numbers divisible by 3 or 5 below a certain limit.</p>
+		<h1>Enter limit</h1>
+
+
+		<input type="text" id="input" value="1000"/>
+                <br>
+                <button class="btn btn-primary" onclick="divisible(document.getElementById('input').value)">Calculate</button>
+
+ 		<div class="resultdiv">
+ 			<br>
+                <h1>Result</h1>
+                <h2 id="result"></h2>
+        </div>
+
+	</center>
+
 </body>
+
 </html>
